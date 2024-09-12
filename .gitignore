@@ -3,4 +3,4 @@ node_modules/
 .replit
 docs/build
 dist/
-
+.vscode
