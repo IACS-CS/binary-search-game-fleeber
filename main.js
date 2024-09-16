@@ -154,15 +154,63 @@ if (answer) {
         ti.output("You are waddles!! :3");
       }
     }
-  } else if (!answer) {
-    ti.output("Do you prefer to stay in the same place?");
+  }
+} else if (!answer) {
+  ti.output("Do you prefer to stay in the same place?");
+  answer = await ti.readYesOrNo();
+  if (answer) {
+    ti.output("Are you old?");
     answer = await ti.readYesOrNo();
     if (answer) {
-      ti.output(
-        "Uhhh.. idk. Work on this next class. make sure to set up audio for soos"
-      );
+      //Bill or Quenton
+      ti.output("Are you 'merican?");
+      answer = await ti.readYesOrNo();
+      if (answer) {
+        ti.output("The 8th and a half president!");
+        ti.output("Welcome back, Quentin Trembley III");
+      } else {
+        ti.output(
+          "A-X-O-L-O-T-L YOUR TIME HAS COME TO BURN! DID YOU INVOKE THE ANCIENT POWER TO RETURN?"
+        );
+        ti.output("Hello there Bill!");
+      }
+    } else {
+      //Time baby or Blendin
+      ti.output("Did an ALL POWERFUL GOD defeat you?");
+      answer = await ti.readYesOrNo();
+      if (answer) {
+        ti.output("I got your choccy milk :>");
+        ti.output("For you, Time Baby");
+      } else {
+        ti.output("Hi Blandin!");
+        ti.output("Where did your hair go?");
+      }
     }
   } else {
-    ti.output("idk what to tell you, man. It broke");
+    ti.output("Are you gay?");
+    answer = await ti.readYesOrNo();
+    if (answer) {
+      //Blubs and Durland
+      ti.output("Do you like bells?");
+      answer = await ti.readYesOrNo();
+      if (answer) {
+        ti.output("Wow! Its Sherrif Durland!");
+        ti.output("You really like ringing that bell, don't you?");
+      } else {
+        ti.output("Uh-uh no-no bibbity bop kazow");
+        ti.output("It's Sherrif Blubs!");
+      }
+    } else {
+      ti.output("Do you have an enormous pompadour?");
+      answer = await ti.readYesOrNo();
+      if (answer) {
+        ti.output("It widdle ol' you!");
+        ti.output("Widdle ol' Gideon");
+      } else {
+        ti.output("It's Bodacious T!");
+      }
+    }
   }
+} else {
+  ti.output("idk what to tell you, man. It broke");
 }
