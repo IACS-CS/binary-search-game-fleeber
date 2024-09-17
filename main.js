@@ -224,7 +224,7 @@ if (answer) {
       ti.output("Do you have an enormous pompadour?");
       answer = await ti.readYesOrNo();
       if (answer) {
-        ti.output("It widdle ol' you!");
+        ti.output("It's widdle ol' you!");
         ti.output("Widdle ol' Gideon");
         ti.showImage("/chars/widdle.jpg");
       } else {
