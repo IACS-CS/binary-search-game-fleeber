@@ -10,6 +10,9 @@ let ti = new TextInterface(app, "What gravity falls character are you?");
 ti.output("Welcome! Lets find out what gravity falls character you are!");
 ti.output("Do you have a job?");
 let answer = await ti.readYesOrNo();
+var audio = new Audio("/AVs/rain.mp3");
+audio.loop = true;
+audio.play();
 if (answer) {
   ti.output("Are you tall?");
   answer = await ti.readYesOrNo();
@@ -30,7 +33,10 @@ if (answer) {
       answer = await ti.readChoice(["W neck", "V neck"]);
       if (answer == "W neck") {
         ti.output("You are Soos!");
-        //set audio player here
+        audio.pause();
+        audio = new Audio("/AVs/blanchin.mp3");
+        audio.loop = true;
+        audio.play();
       } else {
         ti.output("You are Wendy!");
         ti.output("I thought your parents just hated you or something");
@@ -206,6 +212,7 @@ if (answer) {
       if (answer) {
         ti.output("It widdle ol' you!");
         ti.output("Widdle ol' Gideon");
+        ti.showImage;
       } else {
         ti.output("It's Bodacious T!");
       }
