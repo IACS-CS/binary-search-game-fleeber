@@ -25,9 +25,11 @@ if (answer) {
       if (answer) {
         ti.output("You are Grunkle Stan");
         ti.output("(but 'er aim is gettin better)");
+        ti.showImage("/chars/stan.gif");
       } else {
         ti.output("You are Grunkle Ford");
         ti.output("NERD!! 🤓☝️");
+        ti.showImage("/chars/ford.webp");
       }
     } else if (!answer) {
       answer = await ti.readChoice(["W neck", "V neck"]);
@@ -37,9 +39,11 @@ if (answer) {
         audio = new Audio("/AVs/blanchin.mp3");
         audio.loop = true;
         audio.play();
+        ti.showImage("/chars/soos.webp");
       } else {
         ti.output("You are Wendy!");
         ti.output("I thought your parents just hated you or something");
+        ti.showImage("/chars/wendy.jpg");
       }
     }
   } else if (!answer) {
@@ -51,15 +55,18 @@ if (answer) {
       if (answer) {
         ti.output("Hi, Mabel!");
         ti.output("I AM THE GOD OF DISTRUCTION!");
+        ti.showImage("/chars/mabel.webp");
       } else {
         ti.output("Wiggity wiggity wazzup, dude bro? You're Dippy Fresh!");
         ti.output("Hi Dipper!!");
+        ti.showImage("/chars/tyrone.png");
       }
     } else {
       ti.output("Are you crazy?");
       answer = await ti.readYesOrNo();
       if (answer) {
         ti.output("McSuckit. They got me good");
+        ti.showImage("/chars/oldman.png");
         ti.output(
           "Crazy? I was crazy once! They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy!!"
         );
@@ -158,6 +165,7 @@ if (answer) {
         );
       } else {
         ti.output("You are waddles!! :3");
+        ti.showImage("/chars/waddles.jpg");
       }
     }
   }
@@ -174,11 +182,13 @@ if (answer) {
       if (answer) {
         ti.output("The 8th and a half president!");
         ti.output("Welcome back, Quentin Trembley III");
+        ti.showImage("/chars/president.webp");
       } else {
         ti.output(
           "A-X-O-L-O-T-L YOUR TIME HAS COME TO BURN! DID YOU INVOKE THE ANCIENT POWER TO RETURN?"
         );
         ti.output("Hello there Bill!");
+        ti.showImage("/chars/bill.webp");
       }
     } else {
       //Time baby or Blendin
@@ -187,9 +197,11 @@ if (answer) {
       if (answer) {
         ti.output("I got your choccy milk :>");
         ti.output("For you, Time Baby");
+        ti.showImage("/chars/baby.webp");
       } else {
         ti.output("Hi Blandin!");
-        ti.output("Where did your hair go?");
+        ti.output("Nice hair :D");
+        ti.showImage("/chars/camo.jpg");
       }
     }
   } else {
@@ -202,9 +214,11 @@ if (answer) {
       if (answer) {
         ti.output("Wow! Its Sherrif Durland!");
         ti.output("You really like ringing that bell, don't you?");
+        ti.showImage("/chars/gay_bois.webp");
       } else {
         ti.output("Uh-uh no-no bibbity bop kazow");
         ti.output("It's Sherrif Blubs!");
+        ti.showImage("/chars/gay_bois.webp");
       }
     } else {
       ti.output("Do you have an enormous pompadour?");
@@ -212,9 +226,10 @@ if (answer) {
       if (answer) {
         ti.output("It widdle ol' you!");
         ti.output("Widdle ol' Gideon");
-        ti.showImage;
+        ti.showImage("/chars/widdle.jpg");
       } else {
         ti.output("It's Bodacious T!");
+        ti.showImage("/chars/t_man.jpg");
       }
     }
   }
