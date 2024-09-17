@@ -22,3 +22,11 @@ body {
   min-width: 100%;
   min-height: 100%;
 }
+
+body .text-interface {
+  --black: rgba(255, 255, 255, 0);
+}
+
+body .text-interface h2 {
+  background-color: #222;
+}
