@@ -246,4 +246,5 @@ ti.output(
   "Remember! Reality's an illusion, the universe is a hologram, buy gold! Byeeee!"
 );
 await new Promise((r) => setTimeout(r, 2000));
-window.close();
+var test = document.getElementById("everything");
+test.innerHTML = "";
