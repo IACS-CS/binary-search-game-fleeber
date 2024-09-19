@@ -8,12 +8,13 @@ let app = document.querySelector("#app");
 // Create a new "Text Interface"
 let ti = new TextInterface(app, "What gravity falls character are you?");
 var playAgain = true;
+var audio = new Audio("/AVs/rain.mp3");
 while (playAgain) {
   ti.clear();
   ti.output("Welcome! Lets find out what gravity falls character you are!");
   ti.output("Do you have a job?");
   let answer = await ti.readYesOrNo();
-  var audio = new Audio("/AVs/rain.mp3");
+  audio = new Audio("/AVs/rain.mp3");
   audio.loop = true;
   audio.play();
   if (answer) {
@@ -248,3 +249,7 @@ ti.output(
 await new Promise((r) => setTimeout(r, 2000));
 var test = document.getElementById("everything");
 test.innerHTML = "";
+audio.pause();
+audio = new Audio("/AVs/again.mp3");
+audio.loop = true;
+audio.play();
