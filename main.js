@@ -252,7 +252,7 @@ ti.output(
 );
 await new Promise((r) => setTimeout(r, 2000));
 var test = document.getElementById("everything");
-test.innerHTML = "";
+test.innerHTML = '<img src="/chars/bill.webp" id="myVideo" />';
 audio.pause();
 audio = new Audio("/AVs/again.mp3");
 audio.loop = true;
