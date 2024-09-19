@@ -7,6 +7,9 @@ let app = document.querySelector("#app");
 
 // Create a new "Text Interface"
 let ti = new TextInterface(app, "What gravity falls character are you?");
+ti.output(
+  "Our game includes audio! Please make sure that your volume is up for the full experience!"
+);
 var playAgain = true;
 var audio = new Audio("/AVs/rain.mp3");
 while (playAgain) {
