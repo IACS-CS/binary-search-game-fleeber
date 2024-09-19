@@ -10,6 +10,7 @@ let ti = new TextInterface(app, "What gravity falls character are you?");
 ti.output(
   "Our game includes audio! Please make sure that your volume is up for the full experience!"
 );
+await new Promise((r) => setTimeout(r, 5000));
 var playAgain = true;
 var audio = new Audio("/AVs/rain.mp3");
 while (playAgain) {
