@@ -14,6 +14,7 @@ await new Promise((r) => setTimeout(r, 5000));
 var playAgain = true;
 var audio = new Audio("/AVs/rain.mp3");
 while (playAgain) {
+  audio.pause();
   ti.clear();
   ti.output("Welcome! Lets find out what gravity falls character you are!");
   ti.output("Do you have a job?");
